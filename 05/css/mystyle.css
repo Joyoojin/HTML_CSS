@@ -1,0 +1,10 @@
+h3{/*   css 주석 */
+    color :rgb(255, 0, 0);
+    /* color : #ff0000;   (다른표기방식) 
+       color : red;
+       color : rgb(255,0,0);
+
+     */
+    font-size: 20px;
+    
+}

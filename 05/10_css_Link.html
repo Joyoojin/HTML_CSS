@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css 링크 </title>
+
+    <style>
+        a:link{ /*a 태그에서 처음 로딩 했을때*/
+            color: blue;
+        }
+
+        a:visited{ /*방문했던 사이트에 대한 설정*/
+            color: green;
+        }
+        a:hover{ /*마우스를 롤오버(위에 갖다댔을때)했을때*/
+            color : red;
+            font-weight: bold;
+            text-decoration: underline;
+            
+        }
+        a:active{ /*마우스를 롤오버하고 클릭했을때*/
+            color: #00ffff;
+        }   
+        
+    </style>
+
+</head>
+<body>
+    <a href="10-1_link.html" target="_self"> link.html</a>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
+
+</body>
+</html>
