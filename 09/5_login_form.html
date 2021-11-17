@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인폼 만들기</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+           list-style-type: none;
+        }
+        #login_box{
+            border: solid 1px #bbbbbb;
+            width: 220px;
+            height: 120px;
+            border-radius: 15px;
+            margin: 10px 0 0 10px;
+            padding: 10px 0 0 15px;
+            background-color: ivory;
+        }
+        body{
+            font-family: "맑은 고딕" ,"돋움";
+            font-size: 12px;
+            color: #444444;
+        }
+        h2{
+            font-family: "Arial";
+            margin-bottom: 10px;
+        }
+        #login_box input{ /*후순위 태그*/
+            width: 100px; 
+            height: 10px;
+        }
+        #id_pass, #login_btn{   /* , 는 동시선택 (선택자)*/
+            display: inline-block;      /*로그인 버튼의 위치를  아래가 아닌, 옆에 위치하게*/
+            vertical-align: top;   /*로그인 버튼의 위치를  옆에 중에서도, 위에 위치하게*/   
+        }
+        #id_pass span { /*후순위 선택자*/
+            display: inline-block;
+            width: 20px;        /*id와 pass 간격 동일하게 */
+        }
+        #pass{
+            margin-top: 3px;
+
+        }
+        #login_btn button{
+            margin-left: 5px;
+            padding: 12px;
+            border-radius: 5px;
+            background-color: moccasin;
+            /*아이보리 계열 - antiquewhite
+            베이지 계열 - wheat*/
+
+            font-weight: bold
+        }
+        #btns{
+                margin: 12px 0 0 0;
+                text-decoration: underline;
+        }
+        #btns li{
+            margin-left: 10px;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <div id="login_box">
+            <h2>Member login</h2>
+            <ul id="input_button"> 
+                <li id="id_pass">       <!-- li 대신 table로 할 수도 있지만 더 복잡해서, li로 많이 씀.-->
+                    <ul>
+                        <li> <!--id 시작-->
+                            <span> ID </span>
+                            <input type="text">
+                        </li> <!--id 완료-->
+                        <li id="pass"> <!--pass 시작-->
+                            <span>Pass</span>
+                            <input type="text">
+                        </li> <!--pass 완료-->
+                    </ul>
+                </li>              
+
+                <li id="login_btn">
+                      <button> 로그인 </button>
+                </li>
+            </ul> <!--로그인 / 로그인 버튼 끝-->
+            <ul id="btns">
+                <li>회원가입</li>
+                <li>아이디 / 비밀번호 찾기</li>
+            </ul>
+
+        </div> <!--로그인 박스 완료-->
+    </form>
+</body>
+</html>
