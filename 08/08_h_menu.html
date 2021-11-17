@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display 속성으로 출력방식을 변경할 수 있음</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+        }
+        #menu{
+            border: solid 1px #eee;
+            width: 500px;
+            padding: 10px; 
+            margin: 20px 0 0 450px;
+            background-color: #eee;
+            text-align: center;
+        }
+        #menu li{
+          /*  display: block;   -- 기본적으로 block 으로 되어있어서 아래로 출력 */  
+
+            display: inline;  /* inline으로 하면 옆으로 출력됨 */
+
+        }
+    </style>
+</head>
+<body>
+
+    <!--li를 옆으로 방향 바꿀 수 있음-->
+    <ul id="menu">
+        <li>회사소개</li>
+        <li>제품소개</li>
+        <li>공지사항</li>
+        <li>제휴업무</li>
+        <li>고객센터</li>
+
+    </ul>
+</body>
+</html>
