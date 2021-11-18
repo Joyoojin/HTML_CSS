@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float속성을 사용해서 이미지를 수평방향으로 배치</title>
+    <style>
+
+        .items {
+            border: solid 3px #000;
+            float: left;   /*display -inline 적용 + 왼쪽 정렬 과 동일한 효과*/
+            margin: 5px;
+
+
+        }
+        .items img{ /*float으로 이미지의 볼더를 넣을경우
+                    이미지 하단에 공백이 들어가는 버그 -->해결방법 */
+            display: block;
+
+        }
+
+</style>
+</head>
+
+<body>
+<!--이미지를 div 박스 안에 넣어서 컨트롤 하기-->
+    <div class="items"> <img src="img/image1.jpg" width="120px"></div>
+    <div class="items"> <img src="img/image2.jpg" width="120px"></div>
+    <div class="items"> <img src="img/image3.jpg" width="120px"></div>
+    <div class="items"> <img src="img/image4.jpg" width="120px"></div>
+    <div class="items"> <img src="img/image5.jpg" width="120px"></div>
+    <div class="items"> <img src="img/image6.jpg" width="120px"></div>
+
+    <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
+
+</body>
+
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>schedule</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border-collapse: collapse;
+        }
+
+        
+        h3{
+            color: green;
+            border-bottom: green 2px solid;
+            margin: 20px;
+        }
+        li{
+            list-style-type: none;
+        }
+    
+        .below{
+            height: 90px;
+        }
+
+        #schedule {
+            margin: 20px;
+        }
+        #schedule td{   
+            height: 70px;
+            width: 120px;
+            border: gray 1px solid;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        
+        #schedule tr{
+            padding: 5px;
+        }
+
+        #month{
+            text-align: center;
+        }
+
+        #month a{
+            text-decoration: none;
+            text-align: center;
+            color: orange;
+        }
+        #month span{
+            color: #444;
+            font-weight: bold;
+        }
+   
+        #top{
+            height: 20px;
+            font-weight: bold;
+            text-align: center;
+            background-color: greenyellow;
+        }
+        .date{
+            font-weight: bold;
+        }
+        .sun{
+            color: orangered;
+        }
+        .sat{
+            color: blue;
+        }
+        .ToDoList{
+            font-family: "돋움";
+        }
+    </style>
+</head>
+<body>
+    
+    <table id="calendar">
+        <tr>
+            <td colspan="7"><h3><span> 학사일정</span></h3></td>
+        </tr>
+        <tr>
+            <td colspan="7" id="month">
+                <a href="#">◀</a>
+                <span> 2017년 6월</span>
+                <a href="#">▶</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table id="schedule">
+                    <tr id="top">
+                        <td class="day"> <span class="sun">일</span>  </td>
+                          
+                        <td class="day">월</td>
+                        <td class="day">화</td>
+                        <td class="day">수</td>
+                        <td class="day">목</td>
+                        <td class="day">금</td>
+                        <td class="day"><span class="sat">토</span> </td>            
+                    </tr>
+                    <tr class="below">
+                        <td>
+                            <ol>
+                                <li class="date"><span class="sun"></span> </li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date"> </li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">1</li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">2</li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">3</li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">4</li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date"><span class="sat">5</span></li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr  class="below">
+                        <td>
+                            <ol>
+                                <li class="date"><span class="sun">6</span></li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">7</li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">8</li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">9</li>
+                                <br>
+                                <li class="ToDoList">특강 </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">10</li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">11</li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date"><span class="sat">12</span></li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr  class="below">
+                        <td>
+                            <ol>
+                                <li class="date"><span class="sun">13</span></li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">14</li>
+                                <br>
+                                <li class="ToDoList">기말고사</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">15</li>
+                                <br>
+                                <li class="ToDoList">기말고사</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">16</li>
+                                <br>
+                                <li class="ToDoList">기말고사</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">17</li>
+                                <br>
+                                <li class="ToDoList">기말고사</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">18</li>
+                                <br>
+                                <li class="ToDoList">기말고사</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date"><span class="sat">19</span></li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr  class="below">
+                        <td>
+                            <ol>
+                                <li class="date"><span class="sun">20</span></li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">21</li>
+                                <br>
+                                <li class="ToDoList">하계방학</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">22</li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">23</li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">24</li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">25</li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date"><span class="sat">26</span></li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr  class="below">
+                        <td>
+                            <ol>
+                                <li class="date"><span class="sun">27</span></li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">28</li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"></li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">29</li>
+                                <br>
+                                <li class="ToDoList"> MT </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">30</li>
+                                <br>
+                                <li class="ToDoList"> MT </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date">31</li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date"></li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li class="date"><span class="sat"></span></li>
+                                <br>
+                                <br>
+                                <li class="ToDoList"> </li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  
+    
+
+</body>
+</html>

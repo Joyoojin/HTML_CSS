@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 폼(ul li)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        h3 {
+            margin: 20px 0 0 50px;
+
+        }
+
+        h3 span {
+            color: steelblue;
+        }
+
+        #mem_form {
+            width: 1000px;
+            margin: 10px 0 0 50px;
+            font-family: "돋움";
+            font-size: 12px;
+            color: #444;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            border-top: solid 2px steelblue;
+            border-bottom: solid 1px #ccc;
+
+        }
+
+        .cols li {
+            display: inline-block;
+            margin-top: 15px;
+            /*위 아래 간격*/
+        }
+
+        .cols {
+
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            border-bottom: solid 1px silver;
+        }
+
+        .cols li.col1 {
+            width: 100px;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .cols li.col2 {
+            width: 550px;
+        }
+
+        .cols li.col2 input.hp,
+        .cols li.col2 input.year {
+            width: 45px;
+        }
+
+        .cols li.col2 input.birthday {
+            width: 20px;
+        }
+
+        #idCheck {
+            background-color: steelblue;
+            color: white;
+            font-family: "돋움";
+        }
+
+        .buttons {
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .must {
+            color: orange;
+        }
+
+        /*좌우 텍스트 정렬 - text align, 
+         위 아래 텍스트 이동정렬 - vertical align*/
+    </style>
+</head>
+
+<body>
+    <h3><span>■</span> 회원가입정보</h3>
+    <form action="#">
+        <ul id="mem_form">
+            <li>
+                <ul class="cols">
+                    <li class="col1"> <span class="must">＊</span>아이디</li>
+                    <li class="col2">
+                        <input type="text">
+                        <button id="idCheck">중복확인</button>
+                        영문,숫자 조합으로 4~12자 이내
+
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <ul class="cols">
+                    <li class="col1"><span class="must">＊</span>비밀번호</li>
+                    <li class="col2">
+                        <input type="password">
+                        영문,숫자 조합으로 4~12자 이내
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <ul class="cols">
+                    <li class="col1"><span class="must">＊</span>비밀번호 확인</li>
+                    <li class="col2">
+                        <input type="password">
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <ul class="cols">
+                    <li class="col1"><span class="must">＊</span>이름</li>
+                    <li class="col2">
+                        <input type="text">
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <ul class="cols">
+                    <li class="col1"><span class="must">＊</span>생년월일</li>
+                    <li class="col2">
+                        <input type="text" class="year">년
+                        <input type="text" class="birthday">월
+                        <input type="text" class="birthday">일
+                        &nbsp;&nbsp;
+                        <input type="radio" name="birth" checked>음력
+                        &nbsp;&nbsp;
+                        <input type="radio" name="birth" checked>양력
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1"><span class="must">＊</span>이메일 : </li>
+                    <li class="col2">
+                        <input type="text" id="email1">
+
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1"><span class="must">＊</span>휴대전화</li>
+                    <li class="col2">
+                        <input type="text" class="hp"> -
+                        <input type="text" class="hp"> - <input type="text" class="hp">
+
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">직업</li>
+                    <li class="col2">
+                        <select>
+                            <option>직업선택</option>
+                            <option>학생</option>
+                            <option>회사원</option>
+                            <option>주부</option>
+                            <option>공무원</option>
+                            <option>기타</option>
+                        </select>
+                    </li>
+
+                </ul>
+            </li>
+
+
+
+
+            <li>
+                <ul class="cols">
+                    <li class="col1">영어수강목적</li>
+                    <li class="col2">
+                        <input type="checkbox" name="purpose1">시험대비
+                        <input type="checkbox" name="purpose2">업무상
+                        <input type="checkbox" name="purpose3">취미
+                        <input type="checkbox" name="purpose4">기타
+
+                    </li>
+                </ul>
+            </li>
+
+
+
+            <li>
+                <ul class="cols">
+                    <li class="col1"> &nbsp; </li>
+                    <li class="col2">
+                        <center>
+                            <input type="reset" value="●가입취소" class="buttons">
+                            &nbsp;&nbsp;
+                            <input type="submit" value="●가입완료" class="buttons">
+                        </center>
+
+                    </li>
+                </ul>
+            </li>
+
+
+        </ul>
+
+    </form>
+    <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>
+    <!--원래 페이지 주소-->
+
+</body>
+
+</html>
