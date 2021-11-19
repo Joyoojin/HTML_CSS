@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 고정형 3단 레이아웃 </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            width: 980px;
+            margin: 0 auto;
+        }
+
+        header {
+            height: 80px;
+            background-color: #ccc;
+        }
+
+        aside#left {
+            width: 200px;
+            height: 300px;
+            float: left;
+            background-color: #ffff00;
+        }
+
+        aside#right {
+            width: 180px;
+            height: 300px;
+            float: right;
+            background-color: #00ffff;
+        }
+
+        main {
+            width: 600px;
+            height: 300px;
+            float: left;
+            background-color: #00ff00;
+
+        }
+
+        footer {
+            height: 80px;
+            clear: both;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            헤더 콘텐츠
+        </header>
+        <aside id="left">
+            좌측 aside
+        </aside>
+
+        <main>
+            메인main 콘텐츠
+        </main>
+        <aside id="right">우측 aside </aside>
+        <footer>
+            footer 하단
+        </footer>
+    </div>
+
+    <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
+
+</body>
+
+</html>

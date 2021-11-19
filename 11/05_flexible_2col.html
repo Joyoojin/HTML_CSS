@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유동형 레이아웃</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 80px;
+            background-color: #ccc;
+        }
+
+        aside{
+            width: 25%;    /* 유동*/
+            height: 300px;
+            float: left;
+            background-color: #ffff00;
+        }
+
+        main{
+            width: 75%;     /* 유동*/
+            height: 300px;
+            float: left;
+            background-color: #00ff00;
+        }
+
+        footer {
+            height: 80px;
+            clear: both;
+            background-color: #ccc;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        헤더 콘텐츠
+    </header>
+    <aside>
+        좌측 aside
+    </aside>
+    <main>
+        메인main 콘텐츠
+    </main>
+    <footer>
+        footer 하단
+    </footer>
+    <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
+
+</body>
+
+</html>

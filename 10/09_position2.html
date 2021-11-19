@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션(position)을 relative로 설정한 경우</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #parent{
+            width: 500px;
+            height: 300px;
+            border: solid 3px black;
+            margin: 50px 0 0 50px;
+        }
+        
+
+        #box1{
+            background-color: orangered; /*밑에서 pink라고 입력하여서, 밑에서 색깔과 충돌발생 .. 밑이 우선*/
+        }
+        
+
+        #box1, #box2, #box3{ /*동시 선택자*/
+            width: 80px;
+            height: 80px;
+            border: solid 2px black;
+            background-color: pink; /*충돌시, css 순서가 나중에 입력한 것이 우선함*/
+
+        }
+        #box2{
+            background-color: green;  /*충돌시, css 순서가 나중에 입력한 것이 우선함*/
+        }
+        #box3{
+            background-color: blue;
+        }
+
+        #box2{
+            position: relative; /*원래 자신의 기존의 위치가 기준점으로 잡는다*/
+            top: 20px;
+            left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="box1">박스 A</div>
+        <div id="box2">박스 B</div>
+        <div id="box3">박스 C</div>
+
+    </div>
+
+    
+    <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
+
+</body>
+</html>

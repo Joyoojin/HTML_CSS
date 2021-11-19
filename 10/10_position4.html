@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부모 박스와 자식 박스에 position 설정하기</title>
+
+    <!--부모 박스에 position이 설정이 되면 자식박스의
+        position 속성이 absolute일 경우
+        부모가 기준점이 된다.
+    -->
+
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #parent {
+            width: 500px;
+            height: 300px;
+            border: solid 3px black;
+            margin: 50px 0 0 50px;
+        }
+
+
+        #box1 {
+            background-color: orangered;
+            /*밑에서 pink라고 입력하여서, 밑에서 색깔과 충돌발생 .. 밑이 우선*/
+        }
+
+
+        #box1,
+        #box2,
+        #box3 {
+            /*동시 선택자*/
+            width: 80px;
+            height: 80px;
+            border: solid 2px black;
+            background-color: pink;
+            /*충돌시, css 순서가 나중에 입력한 것이 우선함*/
+
+        }
+
+        #parent{
+            position: relative; 
+
+            /*자식의 absolute는 부모의 position 설정이 있으면 부모가 기준점,
+                        부모의 position 설정이 없으면 좌측최상단(0,0)이 기준점
+                    
+             자식의 relative는 원래 자신의 자리가 기준점
+                        */
+            
+            
+        }
+
+        #box2 {
+            background-color: green;
+            /*충돌시, css 순서가 나중에 입력한 것이 우선함*/
+        }
+
+        #box3 {
+            background-color: blue;
+        }
+
+        #box2 {
+            position: absolute;
+            /*absolute 는 (왼쪽 상단)을 기준점으로 잡지만
+            부모의 position값이 정해지다면, 부모가 기준점이 됨.*/
+            top: 20px;
+            left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="box1">박스 A</div>
+        <div id="box2">박스 B</div>
+        <div id="box3">박스 C</div>
+
+    </div>
+
+    
+    <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
+
+</body>
+
+</html>

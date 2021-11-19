@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 레이아웃 태그를 이용하여 웹페이지 레이아웃 만들기 </title>
+    <style>
+        .clear{
+            clear: both;
+        }
+        header{
+            width: 800px;
+            height: 60px;
+            margin: 2px;
+            border: solid 1px red;
+        }
+        aside{
+            border: solid 1px blue;
+            width: 175px;
+            height: 398px;
+            float: left;
+            padding: 2px;
+
+        }
+        nav{
+            height: 150px;
+            margin-top: 50px;
+            border: solid 1px green;
+
+        }
+        main{
+            width: 618px;
+            height: 400px;
+            float: left;
+            margin: 2px;
+            border: solid 1px black;
+        }
+        section{
+            border: solid 1px yellow;
+            width: 500px;
+            height: 150px;
+            margin: 2px;
+        }
+        footer{
+            width: 800px;
+            height: 90px;
+            margin: 2px;
+            border: solid 1px red;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        상단 헤더 header
+    </header>
+    <aside>  <!--요새는 aside 없는 사이트도 많음.
+             aside가 왼쪽, 오른쪽에 각각 있는 사이트도 있고-->
+        좌측 aside
+        <nav>
+            메뉴 nav
+        </nav>
+    </aside>
+    <main>
+        메인main 콘텐츠
+        <section>
+            section 콘텐츠1 
+        </section>
+        <section>
+            section 콘텐츠2
+        </section>
+    </main>
+    <div class="clear"></div>
+    <footer>
+        footer 하단 
+    </footer>
+
+    
+    <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
+</body>
+</html>
