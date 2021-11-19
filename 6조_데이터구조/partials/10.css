@@ -1,0 +1,53 @@
+.footer-page {
+  width: 980px;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 20px 0 0 15px;
+  border-top: solid 3px #06b5b8;
+  color: #666;
+}
+
+.address {
+  float: left;
+}
+
+.link {
+  float: right;
+}
+
+.footer_menu li {
+  margin-top: 5px;
+}
+
+.company_info {
+  margin-top: 20px;
+}
+
+.company_info li {
+  margin-top: 2px;
+}
+
+.copyright {
+  margin-top: 10px;
+  font-size: 11px;
+  color: #888;
+}
+
+.link h3 {
+  font-size: 16px;
+  color: #06b5b8;
+}
+
+.link select {
+  margin: 5px 0 0 50px;
+  width: 100px;
+  height: 18px;
+  font-size: 11px;
+}
+
+.icons {
+  margin-top: 5px;
+  text-align: right;
+}

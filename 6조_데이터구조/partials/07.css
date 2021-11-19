@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#banner-page {
+  width: 980px;
+  margin: 0 auto;
+}
+
+main {
+  margin-top: 10px;
+}
+#banner {
+  height: 110px;
+  background-color: #00a8ab;
+}
+#banner ul {
+  margin-top: 5px;
+}
+#banner li {
+  display: inline;
+  margin-left: 28px;
+}

@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.clear {
+  clear: both;
+}
+
+#header-page {
+  width: 980px;
+  margin: 0 auto;
+}
+header {
+  height: 200px;
+}
+.logo {
+  margin: 15px 0 0 35px;
+  float: left;
+}
+.moto {
+  margin: 45px 0 0 25px;
+  float: left;
+}
+.sitemap {
+  list-style-type: none;
+  float: right;
+  margin: 45px 15px 0 0;
+}
+.sitemap li {
+  display: inline;
+  font-size: 13px;
+}
+
+nav {
+  border-top: solid 1px rgb(179, 179, 179);
+  margin: 35px 0 0 0;
+  padding: 40px 0 0 0;
+}
+nav .menu {
+  list-style-type: none;
+}
+nav .menu li {
+  display: inline;
+}
+nav .menu li.mm {
+  margin: 0 0 0 40px;
+}

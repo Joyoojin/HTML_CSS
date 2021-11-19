@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rubato - header</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .clear {
+            clear: both;            
+        }
+        
+        #page {
+            width: 980px;
+            margin: 0 auto;
+        }
+        header {            
+            height: 200px;            
+        }
+        header .logo {            
+            margin: 15px 0 0 35px;
+            float: left;
+        }
+        header .moto {
+            margin: 45px 0 0 25px;
+            float: left;
+        }
+        header .sitemap {
+            list-style-type: none;            
+            float: right;
+            margin: 45px 15px 0 0;            
+        }
+        header .sitemap li {
+            display: inline;
+            font-size: 13px;                        
+        }
+
+        header nav {
+            border-top: solid 1px rgb(179, 179, 179);
+            margin: 35px 0 0 0;
+            padding: 40px 0 0 0;
+        }              
+        header nav .menu {
+            list-style-type: none;            
+        }
+        header nav .menu li {
+            display: inline;
+        }
+        header nav .menu li.mm {
+            margin: 0 0 0 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+    
+        <header>
+
+            <img class="logo" src="img/logo.gif">
+            <img class="moto" src="img/moto.gif">
+            
+            <ul class="sitemap">
+                <li> 로그인 |</li>
+                <li> 회원 가입 |</li>
+                <li> 사이트맵 |</li>
+                <li> 회사 소개</li>
+            </ul>
+
+            <div class="clear"></div>
+
+            <nav>
+                <ul class="menu">
+                    <li><img src="img/menu01.gif"></li>
+                    <li class="mm"><img src="img/menu02.gif"></li>
+                    <li class="mm"><img src="img/menu03.gif"></li>
+                    <li class="mm"><img src="img/menu04.gif"></li>
+                    <li class="mm"><img src="img/menu05.gif"></li>                
+                </ul>
+            </nav>
+        </header>
+
+    </div>
+</body>
+</html>

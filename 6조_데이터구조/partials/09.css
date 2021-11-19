@@ -1,0 +1,26 @@
+#section-page {
+  width: 980px;
+  margin: 0 auto;
+}
+#sitemap {
+  padding: 20px 0 0 15px;
+}
+
+#sitemap div {
+  height: 140px;
+  float: left;
+  margin: 0 15px 0 15px;
+}
+
+#sitemap h3 {
+  font-size: 15px;
+  color: #12b9b2;
+  margin-left: 16px;
+}
+#sitemap ul {
+  color: #666666;
+}
+#sitemap li {
+  margin: 5px 0 0 20px;
+  list-style-image: url("img/blue_dot.gif");
+}
