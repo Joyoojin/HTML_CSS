@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성별과 성년 구별하는 프로그램 만들기</title>
+</head>
+<body>
+    <script>
+        var gender ="M"; //남자(M), 여자(F)
+        var age=21;
+        if(gender=="M"){
+            if(age>=19){
+                result="남자 성인입니다";
+            }
+            else{
+                result="남자 미성년자 입니다";
+            }
+        }
+        else{
+            if(age>=19){
+                result="여자 성인입니다";
+            }
+            else{
+                result="여자 미성년자 입니다";
+            }
+        }
+
+        document.write("당신은 "+ result + "<p/>")  //당신은 남자 성인입니다
+</script>       <br>
+<a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
+
+</body>
+</html>
