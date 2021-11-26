@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 변수를 이용 없이 반환값 출력하기 </title>
+</head>
+
+<body>
+    <h1 style="color: salmon;"> 변수를 이용 없이 반환값 출력하기 </h1>
+
+    <script>
+        
+        function add(name, n) {
+            document.write(name + "  학생이 1 부터 " + n + "까지 덧셈 수행  <br>")
+
+            var sum = 0
+            for (var i = 1; i <= n; i++) {
+                sum += i;
+            }
+            return sum;
+        }
+
+        document.write("결과 : " + add('홍길동', 10) + "<p/>");
+
+        document.write("결과 : " + add('이영희', 100) + "<p/>");
+
+
+
+    </script>
+
+    <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>
+    <!--원래 페이지 주소-->
+
+    <hr>
+
+    <xmp>
+        
+    <script>
+        
+        function add(name, n) {
+            document.write(name + "  학생이 1 부터 " + n + "까지 덧셈 수행  <br>")
+
+            var sum = 0
+            for (var i = 1; i <= n; i++) {
+                sum += i;
+            }
+            return sum;
+        }
+
+        document.write("결과 : " + add('홍길동', 10) + "<p/>");  //--- 바로 add 함수 호출
+
+        document.write("결과 : " + add('이영희', 100) + "<p/>");
+
+
+
+    </script>
+
+
+    </xmp>
+
+</body>
+
+</html>

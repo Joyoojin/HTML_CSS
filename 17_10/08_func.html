@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>   매개 변수와 인자  </title>
+</head>
+<body>
+    <h1 style="color: salmon;"> 매개 변수와 인자 </h1>
+
+    <script>
+       function add(){  // 매개변수 없음
+           var sum =1 ;
+           return sum;
+       }
+       function add(x){ // // 매개변수 1
+        var sum = x +1;
+        return sum;
+       }
+
+       function add(x ,y ){  // 매개변수 2
+        var sum = x + y;
+        return sum;
+       }
+
+       function add(x ,y , z ){  // 매개변수 3
+        var sum = x + y + z;
+        return sum;
+       }
+
+       var r0 = add();
+       var r1 = add(1);
+       var r2 = add(10,20);
+       var r3 = add(100,200,300);
+       var r4 = add(1, 2, 3, 4);
+       
+
+       document.write("함수 호출 인자 없음 : " +r0 + "</p>")  // Nan
+       document.write("함수 호출 인자 부족 : " +r1 + "</p>")  // Nan
+       document.write("함수 호출 인자 부족 : " +r2 + "</p>") // Nan
+       document.write("정상적인 함수 호출 : " +r3 + "</p>")  // 600
+       document.write("1,2,3 만 인자값으로 적용 : " + r4 + "</p>")  // 6
+
+</script>
+
+<br>
+<a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
+
+<hr>
+
+<xmp>
+   
+    <script>
+        function add(){  // 매개변수 없음
+            var sum =1 ;
+            return sum;
+        }
+        function add(x){ // // 매개변수 1
+         var sum = x +1;
+         return sum;
+        }
+ 
+        function add(x ,y ){  // 매개변수 2
+         var sum = x + y;
+         return sum;
+        }
+ 
+        function add(x ,y , z ){  // 매개변수 3
+         var sum = x + y + z;
+         return sum;
+        }
+ 
+        var r0 = add();
+        var r1 = add(1);
+        var r2 = add(10,20);
+        var r3 = add(100,200,300);
+        var r4 = add(1, 2, 3, 4);
+        
+ 
+        document.write("함수 호출 인자 없음 : " +r0 + "</p>")  // Nan
+        document.write("함수 호출 인자 부족 : " +r1 + "</p>")  // Nan
+        document.write("함수 호출 인자 부족 : " +r2 + "</p>") // Nan
+        document.write("정상적인 함수 호출 : " +r3 + "</p>")  // 600
+        document.write("1,2,3 만 인자값으로 적용 : " + r4 + "</p>")  // 6
+ 
+ </script>
+
+
+</xmp>
+
+</body>
+</html>

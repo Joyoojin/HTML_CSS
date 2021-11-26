@@ -31,6 +31,23 @@ i = 2, j =2*/
        <br>
        <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
 
+<hr>
 
-</body>
+<xmp>
+       
+    var i, j ;
+    outloop:  //label name
+    for(i=0; i<3; i ++){
+        inloop: //label name
+        for(j=0; j<3; j++){
+            if(i===1 && j===1) {
+                continue outloop;
+            }
+            document.write("i = " + i + ", j =" +j + "<br>")
+        }
+    }
+
+
+</xmp>
+ </body>
 </html>

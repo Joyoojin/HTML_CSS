@@ -1,0 +1,47 @@
+/*메인 콘텐츠*/
+section#main{
+    width: 1000px;
+    margin: auto;
+    display: inline;
+
+}
+/*좌측*/
+section#cat1{
+    width: 215px;
+    float: left;
+    margin-top: 55px;
+    font-weight: bold;
+    background-color: lightyellow;
+
+}
+section#cat1 #cat_title{
+    padding: 12px;
+    background-color:lightyellow;
+    color: salmon;
+    text-align: center;
+    border-bottom:  1px solid #ccc;
+}
+section#cat1 li{
+    color: #666666;
+    padding: 7px 0 7px 30px;
+    border-bottom: solid 1px #cccccc;
+    
+}
+
+
+a :active{
+    
+}
+iframe{
+    margin: 50px 0 0 50px;
+    border:  1px solid lightyellow;
+    width: 900px;
+    height: 900px;
+    background-color: white;
+    border-radius: 10px;
+}
+.show_page {
+    height: 300px;
+    float: left;
+}
+

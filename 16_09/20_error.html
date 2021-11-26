@@ -14,5 +14,31 @@
     <br>
     <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
 
-</body>
+<hr>  <xmp> 
+    <h2>회원 인증에 실패했습니다</h2>
+
+    <p>웹 문서에 접근 할 수 없습니다. 관리자에 문의하세요.</p>
+    <p>관리자 이메일 : gosyhong@gmail.com</p>
+    <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
+
+
+    // js 코드 //
+
+    id = prompt ('아이디 입력');
+if(id=='admin') {
+    password=prompt('비밀번호 입력');
+    if(password==='123456'){
+        location.href="20_login.html"
+    }
+    else{
+        location.href="20_error.html" 
+    }
+}
+else{
+    location.href="20_error.html"
+}
+
+</xmp>  
+ </body>
 </html>

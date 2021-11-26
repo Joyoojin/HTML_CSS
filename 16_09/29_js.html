@@ -25,5 +25,23 @@
     </script>       <br>
         <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
  
-</body>
+        <hr>
+        <xmp>
+            
+            var x=0;
+            var sum=0;
+            for(x=1; x<=100; x++){
+                if(x % 3 != 0)
+                    continue;
+                sum += x;
+                document.write(x + " ");
+            }
+            document.write("<p/>");
+            document.write("1~100까지의 수 중 3의 배수 합 : <b>" + sum + "</b>");
+      
+      /*
+      3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99
+    1~100까지의 수 중 3의 배수 합 : 1683  */
+        </xmp>
+ </body>
 </html>

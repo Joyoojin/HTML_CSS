@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,39 @@
     <title>여러개의 자바 스크립트 포함하기</title>
     <script src="ejs1.js"></script>
 </head>
+
 <body>
     <script src="ejs2.js"></script>
-    <script src="ejs3.js"></script>           <br>
-    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
+    <script src="ejs3.js"></script> <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>
+    <!--원래 페이지 주소-->
 
+    <hr>
+    <xmp>
+        <title>여러개의 자바 스크립트 포함하기</title>
+        <script src="ejs1.js"></script>
+        </head>
+
+        <body>
+            <script src="ejs2.js"></script>
+            <script src="ejs3.js"></script> <br>
+            <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>
+            <!--원래 페이지 주소-->
+
+            ------------------------
+            document.write("ejs1.js");
+
+            document.write("<div style='color:red; font-size:24px;'>외부 자바스크립트 파일 <div>");
+                    ------------------------
+                    document.write("ejs2.js");
+
+                    document.write("<div style='color:blue; font-size:20px;'>외부 자바스크립트 파일 <div>");
+                            ------------------------document.write("ejs3.js");
+
+                            document.write("<div style='color:green; font-size:16px;'>외부 자바스크립트 파일 <div>");
+
+
+    </xmp>
 </body>
+
 </html>

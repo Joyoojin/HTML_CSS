@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>   무명 함수 호출하기  </title>
+
+ 
+</head>
+<body>
+    <h1 style="color: salmon;"> 무명 함수 호출하기 </h1>
+    
+    <script>
+        var text1="함수 선언 전 호출 에러"; 
+        var text2="함수 선언 후 호출만 가능"; 
+        // printMsg(text1);             // 함수 선언 전 호출 에러
+
+        var printMsg=function(msg) {    // 함수 객체 선언
+            document.write("함수 호출 메시지 : " + msg + "<br>");
+        }
+        printMsg(text2);                // 함수 선언 후 호출 가능
+     </script>
+<br>
+<a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
+
+<hr>
+
+<xmp>
+       <script>
+        var text1="함수 선언 전 호출 에러"; 
+        var text2="함수 선언 후 호출만 가능"; 
+        // printMsg(text1);             // 함수 선언 전 호출 에러
+        
+        var printMsg=function(msg) {    // 함수 객체 선언
+            document.write("함수 호출 메시지 : " + msg + "<br>");
+        }
+        printMsg(text2);                // 함수 선언 후 호출 가능
+     </script>
+<br>
+<a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
+
+<hr>
+
+
+</xmp>
+
+</body>
+</html>

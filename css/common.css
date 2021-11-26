@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "맑은 고딕", "돋움";
+    font-size: 12px;
+    color: #444;
+    background-color: #f2f0f0;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    list-style-type: none;
+
+}
+a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: #444;
+}
+a:visited{
+    color: gray;
+    font-weight: bold;
+}
+a:hover, a:active{
+    color: greenyellow;
+}
+.clear{
+    clear: both;
+}
+/*---헤더---*/
+header{
+    height: 128px;
+}
+header #top{
+    width: 990px;
+    margin: 0 auto;
+  /*  border: solid 1px #0000ff; */
+}
+header #logo{
+    float: left;
+    margin: 30px 0 0 0;
+/*    border: solid 1px #000000; */
+}
+
+
+
+/*메인 메뉴*/
+header #main_menu{
+    height: 80px;
+    margin-top: 15px;
+    background-color:salmon;
+/*    border: solid 1px #0000ff; */
+}
+header #main_menu ul{
+    width: 990px;
+    margin: auto;
+/*    border: solid 1px #ff0000; */
+    padding-top: 12px;
+    text-align: center;
+
+}
+header #main_menu li{
+    display: inline;
+    margin: 0 35px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "굴림";
+}
+header #main_menu a:link{
+    color: lightyellow;
+}
+header #main_menu a:visited{
+    color: lightyellow;
+}
+header #main_menu a:hover{
+    color: lightyellow;
+}
+header #main_menu a:active{
+    color: lightyellow;
+}
+.header_logo a:link {
+    text-decoration: none;
+    color: salmon;
+}
+.header_logo a:active {
+    text-decoration: underline;
+    font-weight: bold;
+    color: salmon;    
+}
+.logo_link h1 :hover{
+    background-color: salmon;
+    color: lightyellow;
+}
+
+
+.header_logo a:hover {
+    text-decoration: none;
+    color: salmon;    
+
+
+ }
+.header_logo a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: salmon;    
+}
+.header_logo span{
+    padding:  10px 30px 10px 30px;
+    border: solid 4px ;
+    margin: 25px 5px 5px 5px;
+    background-color: lightyellow;
+    border-radius: 15px;
+}
+#pic img{
+    height: 40px;
+    width: 80px;
+    border-radius: 15px;
+}
+

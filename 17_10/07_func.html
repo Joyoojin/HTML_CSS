@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>   서로 다른 변수로 같은 함수의 반환값 출력하기  </title>
+</head>
+<body>
+    <h1 style="color: salmon;"> 서로 다른 변수로 같은 함수의 반환값 출력하기 </h1>
+
+    <script>
+       
+        function add(x,y){
+            return x+y;
+        }
+        var calSum = add;  //함수를 변수에 할당
+        var addUp = add;    //함수를 변수에 할당
+
+        document.write("결과 값: " +calSum(5,10) +"<br>"); //결과 값: 15
+
+        document.write("결과 값: " +addUp(3,20) +"<br>"); //결과 값: 23
+
+
+    </script>
+
+<br>
+<a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
+
+<hr>
+
+<xmp>
+   
+    <script>
+       
+        function add(x,y){
+            return x+y;
+        }
+        var calSum = add;           //함수를 변수에 할당
+        var addUp = add;            //함수를 변수에 할당
+
+        document.write("결과 값: " +calSum(5,10) +"<br>"); //결과 값: 15
+
+        document.write("결과 값: " +addUp(3,20) +"<br>"); //결과 값: 23
+
+
+    </script>
+
+
+
+</xmp>
+
+</body>
+</html>

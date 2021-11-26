@@ -21,5 +21,20 @@
     </script>       <br>
         <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
  
-</body>
+<hr>  <xmp>  
+    <script>
+        function getGrade(){
+            var kor = 95;  // 지역 변수 (함수 내부)
+            document.write("국어 점수는 : " +kor + "<br>"); //95 출력
+
+        }
+        var kor= 100; //  전역 변수 (함수 밖에서 선언)
+        getGrade() ; //함수 호출
+
+        document.write("국어 점수는 : " +kor + "<br>"); //100출력
+        
+    </script>       <br>
+        <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
+  </xmp>  
+ </body>
 </html>

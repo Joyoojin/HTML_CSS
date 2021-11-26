@@ -21,5 +21,20 @@
            <br>
            <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
     
-</body>
+<hr>  <xmp>  
+    <script>
+        function getGrade(){
+            var kor =95;    //지역 변수
+            return kor;
+        }
+
+        getKor =getGrade(); // 함수 호출
+        document.write("지역변수의 값은 함수 외부에서 사용할 수 없습니다.<br>");
+        document.write("국어 점수 :"+ getKor + "<br>");  // 지역변수를 외부에서 호출하는 방법.
+
+    </script>
+           <br>
+           <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
+     </xmp>  
+ </body>
 </html>
