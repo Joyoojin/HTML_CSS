@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>   document  </title>
+    <title>   join 메소드 활용하기  </title>
 </head>
 <body>
-    <h3 style="color: salmon;"> title </h3>
+    <h3 style="color: salmon;"> join 메소드 활용하기 </h3>
 
     <script>
-       
-
+    var city=["서울","부산","대전"];
+    var joindata1 = city.join();
+    var joindata2 = city.join('-');
+    var joindata3 = city.join(' 그리고 ');
+    
+    document.write("조인 결과 1 : " + joindata1 + "<p/>");
+    document.write("조인 결과 2 : " + joindata2 + "<p/>");
+    document.write("조인 결과 3 : " + joindata3 + "<p/>");
 
 
     </script>
@@ -22,7 +28,18 @@
 <hr>
 
 <xmp>
-   
+    <script>
+        var city=["서울","부산","대전"];
+        var joindata1 = city.join();
+        var joindata2 = city.join('-');
+        var joindata3 = city.join(' 그리고 ');
+        
+        document.write("조인 결과 1 : " + joindata1 + "<p/>");
+        document.write("조인 결과 2 : " + joindata2 + "<p/>");
+        document.write("조인 결과 3 : " + joindata3 + "<p/>");
+    
+    
+        </script>
 
 
 </xmp>

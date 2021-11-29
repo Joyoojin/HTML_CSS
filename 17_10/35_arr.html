@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter 메소드 활용하기</title>
+</head>
+
+<body>
+    <h3 style="color: salmon;">filter 메소드 활용하기 </h3>
+
+    <script>
+        var data =[21, 42, 33, 14, 25, 12, 37, 28, 16, 11]; 
+    
+        function filterArr(value){
+            return value>=18;
+        }
+        var fdata=data.filter(filterArr);
+
+        document.write("필터 전 배열  : " + data + "<p/>");
+        document.write("필터 후 배열 : " + fdata + "<p/>");
+        
+
+    </script>
+    <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>
+    <!--원래 페이지 주소-->
+
+    <hr>
+
+    <xmp>           
+        var data =[21, 42, 33, 14, 25, 12, 37, 28, 16, 11]; 
+    
+        function filterArr(value){
+            return value>=18;
+        }
+        var fdata=data.filter(filterArr);
+
+        document.write("필터 전 배열  : " + data + "<p/>");
+        document.write("필터 후 배열 : " + fdata + "<p/>");
+        
+    </xmp>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  자동차의 속도 조절하기  </title>
+</head>
+<body>
+    <h3 style="color: salmon;"> 자동차의 속도 조절하기 </h3>
+
+    <p id="upspeed"></p>
+    <p id="downspeed"></p>
+
+    <script>
+        var car ={
+            name : 'Sonata',
+            speed : 50,
+            color : 'white',
+            speedup :function(){
+                return this.speed+10;
+            },
+            speeddown : function(){
+                var low=this.speed-10;
+                return low;
+            }
+        };
+
+        var upspeed=document.getElementById("upspeed");
+        upspeed.textContent='속도 증가: '+car.speedup();
+        var downspeed=document.getElementById("downspeed");
+        downspeed.textContent='속도 감소: '+car.speeddown();
+    </script>
+    <!--출력
+속도 증가: 60
+속도 감소: 40
+    -->
+<br>
+<a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
+
+<hr>
+
+<xmp>
+    <p id="upspeed"></p>
+    <p id="downspeed"></p>
+
+    <script>
+        var car ={
+            name : 'Sonata',
+            speed : 50,
+            color : 'white',
+            speedup :function(){
+                return this.speed+10;
+            },
+            speeddown : function(){
+                var low=this.speed-10;
+                return low;
+            }
+        };
+        var upspeed=document.getElementById("upspeed");
+        upspeed.textContent='속도 증가: '+car.speedup();
+        var downspeed=document.getElementById("downspeed");
+        downspeed.textContent='속도 감소: '+car.speeddown();
+    </script>
+
+    <!--출력
+속도 증가: 60
+속도 감소: 40
+    -->
+   
+
+
+</xmp>
+
+</body>
+</html>

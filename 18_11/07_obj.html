@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자 함수를 정의 후 객체 만드는  방법</title>
+<style>
+    p {
+        border: 1px solid blue;
+    }
+</style>
+</head>
+
+<body>
+<h3 style="color: salmon;"> 생성자 함수를 정의 후 객체 만드는  방법 </h3>
+
+<p>[Hong's Car]</p>
+<p id="carname"></p>
+<p id="carcolor"></p>
+<p id="carspeed"></p>
+
+<p>[Kim's Car]</p>
+<p id="carname2"></p>
+<p id="carcolor2"></p>
+<p id="carspeed2"></p>
+
+<script>
+
+    function Car(name,color,speed){
+        this.name=name;
+        this.color=color;
+        this.speed=speed;
+        this.speedup=function(){
+            return this.speed+10;
+        };
+        this.speeddown=function(){
+            return this.speed-10;
+        }
+    }
+    var Hongcar = new Car('Sonata','blue',100);
+    var Kimcar = new Car('Jeep','red',70);
+
+    var cname = document.getElementById("carname");
+    cname.textContent = '자동차이름:' + Hongcar.name;
+    var colname = document.getElementById("carcolor");
+    colname.textContent = '자동차색깔:' + Hongcar.color;
+    var cspeed = document.getElementById("carspeed");
+    cspeed.textContent = '자동차 속도:' + Hongcar.speedup();
+
+    var cname = document.getElementById("carname2");
+    cname.textContent = '자동차이름:' + Kimcar.name;
+    var colname = document.getElementById("carcolor2");
+    colname.textContent = '자동차색깔:' + Kimcar.color;
+    var cspeed = document.getElementById("carspeed2");
+    cspeed.textContent = '자동차 속도:' + Kimcar.speedup();
+
+</script>
+<!--출력
+[Hong's Car]
+
+자동차이름:Sonata
+
+자동차색깔:blue
+
+자동차 속도:110
+
+[Kim's Car]
+
+자동차이름:Jeep
+
+자동차색깔:red
+
+자동차 속도:80
+-->
+<br>
+<a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>
+<!--원래 페이지 주소-->
+
+<hr>
+
+<xmp>
+    <p>[Hong's Car]</p>
+    <p id="carname"></p>
+    <p id="carcolor"></p>
+    <p id="carspeed"></p>
+    
+    <p>[Kim's Car]</p>
+    <p id="carname2"></p>
+    <p id="carcolor2"></p>
+    <p id="carspeed2"></p>
+    
+    <script>
+    
+        function Car(name,color,speed){
+            this.name=name;
+            this.color=color;
+            this.speed=speed;
+            this.speedup=function(){
+                return this.speed+10;
+            };
+            this.speeddown=function(){
+                return this.speed-10;
+            }
+        }
+        var Hongcar = new Car('Sonata','blue',100);
+        var Kimcar = new Car('Jeep','red',70);
+    
+        var cname = document.getElementById("carname");
+        cname.textContent = '자동차이름:' + Hongcar.name;
+        var colname = document.getElementById("carcolor");
+        colname.textContent = '자동차색깔:' + Hongcar.color;
+        var cspeed = document.getElementById("carspeed");
+        cspeed.textContent = '자동차 속도:' + Hongcar.speedup();
+    
+        var cname = document.getElementById("carname2");
+        cname.textContent = '자동차이름:' + Kimcar.name;
+        var colname = document.getElementById("carcolor2");
+        colname.textContent = '자동차색깔:' + Kimcar.color;
+        var cspeed = document.getElementById("carspeed2");
+        cspeed.textContent = '자동차 속도:' + Kimcar.speedup();
+    
+    </script>
+    <!--출력
+    [Hong's Car]
+    
+    자동차이름:Sonata
+    
+    자동차색깔:blue
+    
+    자동차 속도:110
+    
+    [Kim's Car]
+    
+    자동차이름:Jeep
+    
+    자동차색깔:red
+    
+    자동차 속도:80
+    -->
+</xmp>
+
+</body>
+
+</html>

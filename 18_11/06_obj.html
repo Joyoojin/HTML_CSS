@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> object 함수를 이용하여 객체 생성 방법</title>
+<style>
+    p {
+        border: 1px solid blue;
+    }
+</style>
+</head>
+
+<body>
+<h3 style="color: salmon;"> object 함수를 이용하여 객체 생성 방법 </h3>
+
+<p id="carname"></p>
+<p id="carcolor"></p>
+<p id="carspeed"></p>
+
+<script>
+    var car = new Object(); //객체 생성
+        car.name= 'Sonata';
+        car.speed= 100;
+        car.color= 'blue';
+        car.speedup = function () {
+        return this.speed+10;
+        };
+
+    var cname = document.getElementById("carname");
+    cname.textContent = '자동차이름:' + car.name;
+    var colname = document.getElementById("carcolor");
+    colname.textContent = '자동차색깔:' + car.color;
+    var cspeed = document.getElementById("carspeed");
+    cspeed.textContent = '자동차 속도:' + car.speedup();
+
+</script>
+<!--출력
+자동차이름:Sonata
+
+자동차색깔:blue
+
+자동차 속도:110
+-->
+<br>
+<a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>
+<!--원래 페이지 주소-->
+
+<hr>
+
+<xmp><p id="carname"></p>
+    <p id="carcolor"></p>
+    <p id="carspeed"></p>
+    
+    <script>
+        var car = new Object(); //객체 생성
+            car.name= 'Sonata';
+            car.speed= 100;
+            car.color= 'blue';
+            car.speedup = function () {
+            return this.speed+10;
+            };
+    
+        var cname = document.getElementById("carname");
+        cname.textContent = '자동차이름:' + car.name;
+        var colname = document.getElementById("carcolor");
+        colname.textContent = '자동차색깔:' + car.color;
+        var cspeed = document.getElementById("carspeed");
+        cspeed.textContent = '자동차 속도:' + car.speedup();
+    
+    </script>
+    <!--출력
+    자동차이름:Sonata
+    
+    자동차색깔:blue
+    
+    자동차 속도:110
+    -->
+
+</xmp>
+
+</body>
+
+</html>

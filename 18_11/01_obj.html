@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>   속성만 가진 객체 만들기  </title>
+    <style>
+        p{
+            border: solid 1px red;
+        }
+        div{
+            border: solid 1px blue;    
+        }
+    </style>
+</head>
+<body>
+    <h3 style="color: salmon;"> 속성만 가진 객체 만들기 </h3>
+
+    <p id="var1"></p>
+    <p id="var2"></p>
+    <p id="var3"></p>
+    <br><br><br>
+    <div class="c4"></div>
+    <div class="c5"></div>
+
+    <script>
+       var car={name:'Sonata', speed:100, color:'white'};
+       document.getElementById("var1").innerHTML="자동차 이름 : "+car['name'];
+       document.getElementById("var2").innerHTML="자동차 속도 : "+car.speed;
+       document.getElementById("var3").innerHTML="자동차 색상 : "+car.color;
+
+       /*방법1*/
+       var c = document.getElementsByClassName("c4");
+       c[0].innerHTML = "자동차속도 : " +car.speed;
+
+       /*방법2*/
+       document.getElementsByClassName("c5")[0].innerHTML="자동차 색깔 : "+car.color;
+       
+    </script>
+
+<br>
+<a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>  <!--원래 페이지 주소-->
+
+<hr>
+
+<xmp>
+    <h3 style="color: salmon;"> 속성만 가진 객체 만들기 </h3>
+
+    <p id="var1"></p>
+    <p id="var2"></p>
+    <p id="var3"></p>
+    <br><br><br>
+    <div class="c4"></div>
+    <div class="c5"></div>
+
+    <script>
+       var car={name:'Sonata', speed:100, color:'white'};
+       document.getElementById("var1").innerHTML="자동차 이름 : "+car['name'];
+       document.getElementById("var2").innerHTML="자동차 속도 : "+car.speed;
+       document.getElementById("var3").innerHTML="자동차 색상 : "+car.color;
+
+       /*방법1*/
+       var c = document.getElementsByClassName("c4");
+       c[0].innerHTML = "자동차속도 : " +car.speed;
+
+       /*방법2*/
+       document.getElementsByClassName("c5")[0].innerHTML="자동차 색깔 : "+car.color;
+       
+    </script>
+
+
+</xmp>
+
+</body>
+</html>
