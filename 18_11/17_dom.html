@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dom문서객체를 set attribute 사용하여 속성값 설정하기 </title>
+    <!--
+    dom에 속성값 설정 방법1 : 객체 변수 사용
+                     방법2 : set attribute 사용하기 //17_dom.html 에서 
+-->
+
+    <script>
+        function add() {
+            var img = document.createElement('img');
+            img.setAttribute('src', 'html5.jpg');
+            img.setAttribute('width', 100);
+            img.setAttribute('height', 122);
+            document.body.appendChild(img);
+        };
+    </script>
+</head>
+
+<body>
+    <h3 style="color: salmon;"> Dom문서객체를 set attribute 사용하여 속성값 설정하기 </h3>
+
+
+    <a href="#" onclick="add()">[이미지 추가]</a>
+    <!--클릭 여러번 하면 이미지 계속 추가 됨-->
+    <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>
+    <!--원래 페이지 주소-->
+
+    <hr>
+
+    <xmp>
+        <script>
+            function add() {
+                var img = document.createElement('img');
+                img.setAttribute('src', 'html5.jpg');
+                img.setAttribute('width', 100);
+                img.setAttribute('height', 122);
+                document.body.appendChild(img);
+            };
+        </script>
+    </head>
+    
+    <body>
+        <h3 style="color: salmon;"> Dom문서객체를 set attribute 사용하여 속성값 설정하기 </h3>
+    
+    
+        <a href="#" onclick="add()">[이미지 추가]</a>
+
+    </xmp>
+
+</body>
+
+</html>

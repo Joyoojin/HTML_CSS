@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> date 객체 메소드 활용하기2 </title>
+</head>
+
+<body>
+    <h3 style="color: salmon;"> date 객체 메소드 활용하기2 </h3>
+
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <p id="d3"></p>
+    <p id="d4"></p>
+    <p id="d5"></p>
+    <p id="d6"></p>
+    <p id="d7"></p>
+    <p id="d8"></p>
+    <p id="d9"></p>
+
+    <script>
+
+        var today = new Date();
+
+        document.getElementById("d1").innerHTML = today.toDateString(); //Tue Nov 30 2021
+
+        document.getElementById("d2").innerHTML = today.toISOString(); //2021-11-30T03:33:05.455Z
+
+        document.getElementById("d3").innerHTML = today.toJSON(); //2021-11-30T03:33:05.455Z
+
+        document.getElementById("d4").innerHTML = today.toLocaleDateString(); //2021. 11. 30.
+
+        document.getElementById("d5").innerHTML = today.toLocaleTimeString(); //오후 12:33:05
+
+        document.getElementById("d6").innerHTML = today.toLocaleString(); //2021. 11. 30. 오후 12:33:05
+
+        document.getElementById("d7").innerHTML = today.toString(); //Tue Nov 30 2021 12:33:05 GMT+0900 (한국 표준시)
+
+        document.getElementById("d8").innerHTML = today.toTimeString(); //12:33:05 GMT+0900 (한국 표준시)
+
+        document.getElementById("d9").innerHTML = today.toUTCString(); //Tue, 30 Nov 2021 03:33:05 GMT
+
+
+        /* 출력결과
+Tue Nov 30 2021
+
+2021-11-30T03:33:05.455Z
+
+2021-11-30T03:33:05.455Z
+
+2021. 11. 30.
+
+오후 12:33:05
+
+2021. 11. 30. 오후 12:33:05
+
+Tue Nov 30 2021 12:33:05 GMT+0900 (한국 표준시)
+
+12:33:05 GMT+0900 (한국 표준시)
+
+Tue, 30 Nov 2021 03:33:05 GMT
+*/
+    </script>
+
+
+    <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>
+    <!--원래 페이지 주소-->
+
+    <hr>
+
+    <xmp>
+        <p id="d1"></p>
+        <p id="d2"></p>
+        <p id="d3"></p>
+        <p id="d4"></p>
+        <p id="d5"></p>
+        <p id="d6"></p>
+        <p id="d7"></p>
+        <p id="d8"></p>
+        <p id="d9"></p>
+
+        <script>
+
+
+            var today = new Date();
+
+            document.getElementById("d1").innerHTML = today.toDateString(); //Tue Nov 30 2021
+
+            document.getElementById("d2").innerHTML = today.toISOString(); //2021-11-30T03:33:05.455Z
+
+            document.getElementById("d3").innerHTML = today.toJSON(); //2021-11-30T03:33:05.455Z
+
+            document.getElementById("d4").innerHTML = today.toLocaleDateString(); //2021. 11. 30.
+
+            document.getElementById("d5").innerHTML = today.toLocaleTimeString(); //오후 12:33:05
+
+            document.getElementById("d6").innerHTML = today.toLocaleString(); //2021. 11. 30. 오후 12:33:05
+
+            document.getElementById("d7").innerHTML = today.toString(); //Tue Nov 30 2021 12:33:05 GMT+0900 (한국 표준시)
+
+            document.getElementById("d8").innerHTML = today.toTimeString(); //12:33:05 GMT+0900 (한국 표준시)
+
+            document.getElementById("d9").innerHTML = today.toUTCString(); //Tue, 30 Nov 2021 03:33:05 GMT
+    
+         </script >
+
+    </xmp>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메소드 체이닝 실습 </title>
+    <script src="jquery-3.2.1.min.js"> </script>
+    <!--j쿼리 등록-->
+
+    <script>
+        $(document).ready(function () {
+            $("#slide").click(function () {
+                $("#panel").css("color", "red")
+                    .slideDown(2000)
+                    .slideUp(6000)
+                    .fadeTo("slow", 0.3);
+            });
+        });
+    </script>
+    <style>
+        #slide,
+        #panel,
+        #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+            background-color: #ffff00;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 style="color: salmon;"> 메소드 체이닝 실습 </h3>
+
+    <div id="slide">[오늘의 공지사항]</div>
+    <div id="panel">오늘의 제이쿼리 프로그램을 학습합니다. <br>
+        예제를 작상한 후 실행해 보세요</div>
+
+
+    <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>
+    <!--원래 페이지 주소-->
+
+    <xmp>
+        <script>
+            $(document).ready(function () {
+                $("#slide").click(function () {
+                    $("#panel").css("color", "red")
+                        .slideDown(2000)
+                        .slideUp(6000)
+                        .fadeTo("slow", 0.3);
+                });
+            });
+        </script>
+        <style>
+            #slide,
+            #panel,
+            #flip {
+                padding: 5px;
+                text-align: center;
+                background-color: #e5eecc;
+                border: solid 1px #c3c3c3;
+            }
+
+            #panel {
+                padding: 50px;
+                display: none;
+                background-color: #ffff00;
+            }
+        </style>
+        </head>
+
+        <body>
+            <h3 style="color: salmon;"> 메소드 체이닝 실습 </h3>
+
+            <div id="slide">[오늘의 공지사항]</div>
+            <div id="panel">오늘의 제이쿼리 프로그램을 학습합니다. <br>
+                예제를 작상한 후 실행해 보세요</div>
+
+
+    </xmp>
+</body>
+
+</html>

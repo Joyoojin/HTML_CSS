@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> date 객체 활용하기 </title>
+</head>
+
+<body>
+    <h3 style="color: salmon;"> date 객체 활용하기 </h3>
+
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <p id="d3"></p>
+    <p id="d4"></p>
+    <script>
+       //기본생성자
+       document.getElementById("d1").innerHTML = new Date();
+       
+       //1970.01.01 이후의 밀리초 계산
+       document.getElementById("d2").innerHTML = new Date(1419803527400);
+
+       //문자열날짜
+       document.getElementById("d3").innerHTML = new Date("October 15, 2018 06:18:07");
+        //날짜지정
+        document.getElementById("d4").innerHTML = new Date(2018, 11, 25, 18, 30, 29  )
+        /*
+Tue Nov 30 2021 12:10:41 GMT+0900 (한국 표준시)
+
+Mon Dec 29 2014 06:52:07 GMT+0900 (한국 표준시)
+
+Mon Oct 15 2018 06:18:07 GMT+0900 (한국 표준시)
+
+Tue Dec 25 2018 18:30:29 GMT+0900 (한국 표준시)*/
+</script>
+
+
+    <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>
+    <!--원래 페이지 주소-->
+
+    <hr>
+
+    <xmp>    <title> date 객체 활용하기 </title>
+    </head>
+    
+    <body>
+        <p id="d1"></p>
+        <p id="d2"></p>
+        <p id="d3"></p>
+        <p id="d4"></p>
+        <script>
+           //기본생성자
+           document.getElementById("d1").innerHTML = new Date();
+           
+           //1970.01.01 이후의 밀리초 계산
+           document.getElementById("d2").innerHTML = new Date(1419803527400);
+    
+           //문자열날짜
+           document.getElementById("d3").innerHTML = new Date("October 15, 2018 06:18:07");
+            //날짜지정
+            document.getElementById("d4").innerHTML = new Date(2018, 11, 25, 18, 30, 29);
+            
+            /* 출력결과 
+    Tue Nov 30 2021 12:10:41 GMT+0900 (한국 표준시)
+    
+    Mon Dec 29 2014 06:52:07 GMT+0900 (한국 표준시)
+    
+    Mon Oct 15 2018 06:18:07 GMT+0900 (한국 표준시)
+    
+    Tue Dec 25 2018 18:30:29 GMT+0900 (한국 표준시)*/
+    </script>
+
+
+
+    </xmp>
+
+</body>
+
+</html>

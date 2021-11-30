@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그림의 위치와 크기 변경하기 </title>
+    <script src="jquery-3.2.1.min.js"> </script>
+    <!--j쿼리 등록-->
+
+    <script>
+        $(document).ready(function () {
+            $("button.move").click(function () {
+                $("img").animate({
+                    left: '300px',
+                    height: '300px',
+                    width: '350px'
+                });
+            });
+            $("button.init").click(function () {
+                $("img").animate({
+                    left: '0px',
+                    height: '100px',
+                    width: '130px'
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h3 style="color: salmon;"> 그림의 위치와 크기 변경하기 </h3>
+
+    <button class="move">확대</button>
+    <button class="init">축소</button>
+    <p></p>
+    <img name="pic1" src="pic1.jpg" width="130" height="100" style="position: relative" />
+
+    <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>
+    <!--원래 페이지 주소-->
+
+    <xmp>
+        <script>
+            $(document).ready(function () {
+                $("button.move").click(function () {
+                    $("img").animate({
+                        left: '300px',
+                        height: '300px',
+                        width: '350px'
+                    });
+                });
+                $("button.init").click(function () {
+                    $("img").animate({
+                        left: '0px',
+                        height: '100px',
+                        width: '130px'
+                    });
+                });
+            });
+        </script>
+        </head>
+
+        <body>
+            <h3 style="color: salmon;"> 그림의 위치와 크기 변경하기 </h3>
+
+            <button class="move">확대</button>
+            <button class="init">축소</button>
+            <p></p>
+            <img name="pic1" src="pic1.jpg" width="130" height="100" style="position: relative" />
+
+    </xmp>
+</body>
+
+</html>

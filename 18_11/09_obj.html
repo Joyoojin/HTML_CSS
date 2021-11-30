@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체배열 구조</title>
+    <style>
+        p {
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 style="color: salmon;"> 객체배열 구조 </h3>
+
+    <p>[Car1]</p>
+    <p id="data10"></p>
+    <p id="data20"></p>
+    <p id="data30"></p>
+    <p>[Car2]</p>
+    <p id="data11"></p>
+    <p id="data21"></p>
+    <p id="data31"></p>
+    <p>[Car3]</p>
+    <p id="data12"></p>
+    <p id="data22"></p>
+    <p id="data32"></p>
+
+    <script>
+        var car = [
+            { name: 'Sonata', color: 'blue', speed: 100 },
+            { name: 'Jeep', color: 'red', speed: 70 },
+            { name: 'Passt', color: 'white', speed: 150 }
+        ]
+
+        for (var i = 0; i < 3; i++) {
+            var cname = document.getElementById("data1" + i);
+            cname.textContent = '자동차이름:' + car[i].name;
+            var colname = document.getElementById("data2" + i);
+            colname.textContent = '자동차색깔:' + car[i].color;
+            var cspeed = document.getElementById("data3" + i);
+            cspeed.textContent = '자동차 속도:' + car[i].speed;
+
+        }
+    </script>
+    <!--출력
+객체배열 구조
+[Car1]
+
+자동차이름:Sonata
+
+자동차색깔:blue
+
+자동차 속도:100
+
+[Car2]
+
+자동차이름:Jeep
+
+자동차색깔:red
+
+자동차 속도:70
+
+[Car3]
+
+자동차이름:Passt
+
+자동차색깔:white
+
+자동차 속도:150
+
+-->
+    <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>
+    <!--원래 페이지 주소-->
+
+    <hr>
+
+    <xmp>
+        <style>
+            p {
+                border: 1px solid blue;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h3 style="color: salmon;"> 객체배열 구조 </h3>
+    
+        <p>[Car1]</p>
+        <p id="data10"></p>
+        <p id="data20"></p>
+        <p id="data30"></p>
+        <p>[Car2]</p>
+        <p id="data11"></p>
+        <p id="data21"></p>
+        <p id="data31"></p>
+        <p>[Car3]</p>
+        <p id="data12"></p>
+        <p id="data22"></p>
+        <p id="data32"></p>
+    
+        <script>
+            var car = [
+                { name: 'Sonata', color: 'blue', speed: 100 },
+                { name: 'Jeep', color: 'red', speed: 70 },
+                { name: 'Passt', color: 'white', speed: 150 }
+            ]
+    
+            for (var i = 0; i < 3; i++) {
+                var cname = document.getElementById("data1" + i);
+                cname.textContent = '자동차이름:' + car[i].name;
+                var colname = document.getElementById("data2" + i);
+                colname.textContent = '자동차색깔:' + car[i].color;
+                var cspeed = document.getElementById("data3" + i);
+                cspeed.textContent = '자동차 속도:' + car[i].speed;
+    
+            }
+        </script>
+        <!--출력
+    객체배열 구조
+    [Car1]
+    
+    자동차이름:Sonata
+    
+    자동차색깔:blue
+    
+    자동차 속도:100
+    
+    [Car2]
+    
+    자동차이름:Jeep
+    
+    자동차색깔:red
+    
+    자동차 속도:70
+    
+    [Car3]
+    
+    자동차이름:Passt
+    
+    자동차색깔:white
+    
+    자동차 속도:150
+    
+    -->
+    </xmp>
+
+</body>
+
+</html>

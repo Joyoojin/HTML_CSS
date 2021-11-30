@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggleClass() 메소드 실습하기 </title>
+    <script src="jquery-3.2.1.min.js"> </script>
+    <!--j쿼리 등록-->
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("h1, h2, p, div").toggleClass("red");
+            });
+        });
+    </script>
+    <style>
+        .red {
+            color: red;
+            border: 1px solid blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3 style="color: salmon;"> toggleClass() 메소드 실습하기 </h3>
+
+    <h1>HTML5</h1>
+    <h2>CSS3</h2>
+    <p>자바스크립트</p>
+    <div>제이쿼리</div><br>
+    <button class="add">CSS적용</button>
+    <button class="remove">CSS적용 해제</button>
+    <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>
+    <!--원래 페이지 주소-->
+
+    <xmp>
+        <script>
+            $(document).ready(function () {
+                $("button").click(function () {
+                    $("h1, h2, p, div").toggleClass("red");
+                });
+            });
+        </script>
+        <style>
+            .red {
+                color: red;
+                border: 1px solid blue;
+            }
+        </style>
+
+        </head>
+
+        <body>
+            <h3 style="color: salmon;"> toggleClass() 메소드 실습하기 </h3>
+
+            <h1>HTML5</h1>
+            <h2>CSS3</h2>
+            <p>자바스크립트</p>
+            <div>제이쿼리</div><br>
+            <button class="add">CSS적용</button>
+            <button class="remove">CSS적용 해제</button>
+
+    </xmp>
+</body>
+
+</html>

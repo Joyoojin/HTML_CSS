@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체배열 (2차원 배열)</title>
+    <style>
+        p {
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 style="color: salmon;"> 객체배열 (2차원 배열) </h3>
+
+    <p id="car"></p>
+    <p>[Car1속성]</p>
+    <p id="car0"></p>
+    <p>[Car2 속성]</p>
+    <p id="car1"></p>
+    <p>[Car3 속성]</p>
+    <p id="car2"></p>
+
+    <script>
+        var car = new Array(
+            ['Sonata', 'blue', 100],
+            ['Jeep', 'red', 70],
+            ['Passt', 'white', 150]
+        );
+
+        var cname = document.getElementById("car");
+        cname.textContent = "car[2][1]: " + car[2][1];
+        for (var i = 0; i < 3; i++) {
+            var cname = document.getElementById("car" + i);
+            cname.textContent = car[i];
+        }
+    </script>
+    <!--출력
+car[2][1]: white
+
+[Car1속성]
+
+Sonata,blue,100
+
+[Car2 속성]
+
+Jeep,red,70
+
+[Car3 속성]
+
+Passt,white,150
+-->
+    <br>
+    <a href="../index.htm"><i><b>원래 페이지로 돌아감</b></i></a>
+    <!--원래 페이지 주소-->
+
+    <hr>
+
+    <xmp>
+        <h3 style="color: salmon;"> 객체배열 (2차원 배열) </h3>
+
+        <p id="car"></p>
+        <p>[Car1속성]</p>
+        <p id="car0"></p>
+        <p>[Car2 속성]</p>
+        <p id="car1"></p>
+        <p>[Car3 속성]</p>
+        <p id="car2"></p>
+    
+        <script>
+            var car = new Array(
+                ['Sonata', 'blue', 100],
+                ['Jeep', 'red', 70],
+                ['Passt', 'white', 150]
+            );
+    
+            var cname = document.getElementById("car");
+            cname.textContent = "car[2][1]: " + car[2][1];
+            for (var i = 0; i < 3; i++) {
+                var cname = document.getElementById("car" + i);
+                cname.textContent = car[i];
+            }
+        </script>
+        <!--출력
+    car[2][1]: white
+    
+    [Car1속성]
+    
+    Sonata,blue,100
+    
+    [Car2 속성]
+    
+    Jeep,red,70
+    
+    [Car3 속성]
+    
+    Passt,white,150
+    -->
+    </xmp>
+
+</body>
+
+</html>
