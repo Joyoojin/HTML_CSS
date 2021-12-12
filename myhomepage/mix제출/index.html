@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css연결-->
+    <link rel="stylesheet" href="css/common.css">  
+    <!--폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <title> JYJ </title>
+    <!--이모티콘 이미지-->
+    <script src="https://kit.fontawesome.com/e11d53af1e.js" crossorigin="anonymous"></script>    <!--자바스크립트-->
+
+    <!--자바스크립트-->
+    <script src="js/main.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/footer.js" defer></script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <a href="index.html">
+                    <i class="fab fa-hacker-news-square"></i>           <!--y로고 -->
+                   JYJ</a>                <!--본문 바로가기-->
+                </div>
+
+                <ul class="navbar__menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sub.html">Items</a></li>
+                    <li><a href="">게시판</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">공지사항</a></li>
+                </ul>
+
+                <ul class="navbar__icons">
+                    <li> <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <!--facebook 아이콘-->
+                    <li> <a href="https://www.instagram.com/" target="_blank"> <i class="fab fa-instagram"></i> </a>
+                    </li>
+                    <!--인스타그램 아이콘-->
+                    <li> <a href="https://www.tweeter.com/" target="_blank"> <i class="fab fa-twitter-square"> </i></a>
+                    </li>
+                    <!--트위터 아이콘-->
+                </ul>
+
+                <a href="#" class="navbar__toogleBtn">
+                    <i class="fas fa-bars"></i>
+                    <!--메뉴 펼치기 버튼-->
+                </a>
+            </nav>            
+        </div><!--header-->
+
+
+
+        <div id="main"> 
+            <div class="section">
+                <input type="radio" name="slide" id="slide01" checked>
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+
+                <div class="slidewrap">
+
+                    <ul class="slidelist">
+                        <!-- 슬라이드 영역 -->
+                        <li class="slideitem">
+                            <a href="sub.html">
+                                <div class="textbox">
+                                    <h3> 밀키트 </h3>
+                                    <p> 간편한 샐러드 하루 배송</p>
+                                </div>
+                                <img src="./img/max-griss-7QN816ztGgM-unsplash.jpg">
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a href="sub.html">
+
+                                <div class="textbox">
+                                    <h3> 무항생제 계란</h3>
+                                    <p> [바른계란] 동물복지 계란 12입</p>
+                                </div>
+                                <img src="./img/rayia-soderberg-2vzJ1PQMW2I-unsplash.jpg">
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a href="sub.html">
+
+                                <div class="textbox">
+                                    <h3> 시리얼 </h3>
+                                    <p> 간편한 그래놀라 15입 </p>
+                                </div>
+                                <img src="./img/tangerine-newt-N0Ai_Hc5s0I-unsplash.jpg">
+                            </a>
+                        </li class="slideitem">
+
+                        <!-- 좌,우 슬라이드 버튼 -->
+                        <div class="slide-control">
+                            <div>
+                                <label for="slide03" class="left"></label>
+                                <label for="slide02" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide01" class="left"></label>
+                                <label for="slide03" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide02" class="left"></label>
+                                <label for="slide01" class="right"></label>
+                            </div>
+                        </div>
+
+                    </ul> 
+                    <!-- 페이징 -->
+                    <ul class="slide-pagelist">
+                        <li><label for="slide01"></label></li>
+                        <li><label for="slide02"></label></li>
+                        <li><label for="slide03"></label></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <!--main-->
+        <div id="footer">
+            <div class="footer-page">
+                <div data-include-path="footer.html"></div>
+            </div>
+        </div>
+
+
+    </div>
+    <!--wrapper-->
+
+
+</body>
+
+</html>

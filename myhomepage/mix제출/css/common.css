@@ -1,0 +1,27 @@
+@import url(style_header.css);
+@import url(main.css);
+@import url(sub.css);
+@import url(footer.css);
+
+
+:root{  /*변수 할당해서 사용 */ 
+    --text-color1 : #FFE9FF;
+    --dark-color2 : #444;
+    --background-color1 : #FFFADE;
+    --background-color2 : #752AA9;
+    --accent-color : #9677A7;
+    --point-color :#60BAAE;
+    --color-pink : #CC1F91;
+}
+
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro'; /*폰트체*/
+    background-color: var(--background-color1);
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color1);
+}
+
