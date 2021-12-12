@@ -1,0 +1,51 @@
+#wrap {
+    text-align: center;
+}
+
+.section_top {
+    color: var(--point-color);
+    font-size: 40px;
+}
+
+.list_area {
+    margin: 40px;
+}
+
+.section_Items a {
+    color: var(--dark-color);
+}
+
+.main_Title_area {
+    color: var(--text-color2);
+    font-size: 22px;
+
+}
+
+.item_title {
+    font-size: 17px;
+    color: var(--text-color2);
+}
+
+.item_detail {
+    font-size: 14px;
+}
+
+.fontBold {
+    font-weight: bold;
+   
+}
+.fontPrice{
+    font-size: 19px;
+    color: var(--point-color);
+}
+.section_Items img {
+    border-radius: 15px;
+    /*이미지 크기*/
+    width: 300px;
+    height: 300px;
+}
+
+.list_ul li {
+    display: inline-block;
+    padding: 20px;
+}
