@@ -1,0 +1,84 @@
+
+    .join_form{
+        padding-top: 150px ;
+    
+    }
+    .join_form input, select{
+        border-radius: 5px;
+        border-color: var(--text-color2);
+    }
+    .join_form h3 {
+        margin: 20px 0 0 40px;
+        
+    }
+
+    .join_form h3 span {
+        color: var(--point-color);
+
+    }
+
+
+    #mem_form {
+        width: 100%;
+        margin: 10px 0 0 50px;
+        font-size: 12px;
+        color: var(--text-color2);
+        padding-top: 5px;
+        padding-bottom: 10px;
+        border-top: solid 2px var(--point-color);
+    }
+
+    .cols li {
+        display: inline-block;
+        margin-top: 15px;
+        /*위 아래 간격*/
+    }
+
+    .cols {
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+
+    .cols li.col1 {
+        width: 100px;
+        text-align: right;
+        font-weight: bold;
+    }
+
+    .cols li.col2 {
+        width: 550px;
+    }
+
+    .cols li.col2 input.hp,
+    .cols li.col2 input.year {
+        width: 45px;
+    }
+
+    .cols li.col2 input.birthday {
+        width: 20px;
+    }
+
+    #idCheck {
+        background-color: var(--point-color);
+        color: var(--text-color2);
+        border-radius: 5px;
+    }
+
+    .buttons {
+        background-color: var(--point-color);
+        border-radius: 5px;
+    }
+
+    .must {
+        color: var(--color-pink);
+    }
+
+
+
+    @media screen and (min-width:1000px) { 
+        #mem_form {
+            padding-left: 35%;
+        }
+    }
+    /*좌우 텍스트 정렬 - text align, 
+     위 아래 텍스트 이동정렬 - vertical align*/

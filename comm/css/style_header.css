@@ -1,0 +1,106 @@
+:root{  /*변수 할당해서 사용 */ 
+    --text-color1 : #FFE9FF;
+    --text-color2 : #752AA9;
+    --dark-color : #444;
+    --background-color1 : #FFFADE;
+    --background-color2 : #752AA9;
+    --accent-color : #9677A7;
+    --point-color :#60BAAE;
+    --color-pink : #CC1F91;
+
+}
+
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro'; /*폰트체*/
+    background-color: var(--background-color1);
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color1);
+}
+
+.navbar{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 8px 12px;
+    background-color: var(--background-color2);
+}
+.navbar__logo{
+    padding: 10px;
+    font-size: 24px;  /*로고글씨*/
+    color: var(--text-color1);
+}
+.navbar__logo a{
+    padding: 10px;
+}
+
+.navbar__logo i{
+    color: var(--point-color); /*로고색깔*/
+}
+
+.navbar__menu{
+    display: flex;  /*home, gallery 정렬 수평으로 여러줄*/
+    list-style: none;
+    padding-left: 0;
+}
+.navbar__menu li{
+    padding: 8px 22px; /*home gallery 사이사이 스페이스*/
+}
+.navbar__menu li:hover{
+    background-color: var(--accent-color);
+    border-radius: 4px;
+}
+.navbar__icons{  /*페북 인스타 아이콘 스타일*/
+    list-style: none;
+    color: var(--text-color1);
+    display: flex;
+    padding-left: 0;
+}
+.navbar__icons li{
+    padding: 8px 12px;  /*페북 인스타 사이 간격*/
+}
+
+.navbar__toogleBtn{
+    position: absolute;        
+    right: 32px; 
+    font-size: 24px;
+    color: var(--accent-color); 
+    display: none;
+}
+
+@media screen and (max-width:768px) { /*작은 화면 출력되는 미디어 쿼리*/
+    .navbar{
+        flex-direction: column;  
+        align-items: flex-start;
+        padding: 8px 24px;
+        background: rgb(83,1,88); /*gradient 적용*/
+        background: linear-gradient(221deg, rgba(83,1,88,1) 0%, rgba(83,1,88,1) 5%, rgba(141,20,146,1) 19%, rgba(221,47,226,1) 36%, rgba(188,72,230,1) 52%, rgba(163,90,234,1) 64%, rgba(147,102,236,1) 72%, rgba(137,110,237,1) 89%, rgba(102,136,242,1) 95%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 100%, rgba(0,212,255,1) 116%); /*gradient 적용*/  
+    }
+    .navbar__menu{
+        display: none;
+        flex-direction: column;   
+        align-items: center; 
+        width: 100%;
+    }
+    .navbar__menu li{
+        width: 100%;
+        text-align: center; 
+    }
+    .navbar__icons{
+        display: none;
+        justify-content: center; 
+        width: 100%; 
+        padding-left : 0; 
+    }
+    .navbar__toogleBtn{
+    display: block;
+    top: 15px;
+    }
+    .navbar__menu.active,  
+    .navbar__icons.active{
+        display: flex;  
+    }
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css연결-->
+    <link rel="stylesheet" href="css/common.css">
+    <!--폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <title> JYJ </title>
+    <!--이모티콘 이미지-->
+    <script src="https://kit.fontawesome.com/e11d53af1e.js" crossorigin="anonymous"></script>
+    <!--자바스크립트-->
+
+    <!--자바스크립트-->
+    <script src="js/main.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/footer.js" defer></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <ul class="header-list">
+                <li>
+                    <div class="navbar__logo">
+                        <a href="index.html">
+                            <div class="logo">
+                                <img src="img/logo_green_bg_size.png" alt="">
+                            </div>
+                            <!--y로고 -->
+                            <div class="logo_text"> JYJ </div>
+                        </a>
+                        <!--본문 바로가기-->
+                    </div>
+                </li>
+                <li class="updown_menu">
+                    <div class="upper_menu">
+                        <ul class="menu-ul menuA">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="sub.html">회원가입</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="down_menu">
+                        <ul class="menu-ul menuB">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="sub2.html">NEW</a></li>
+                            <li><a href="sub2.html">BEST</a></li>
+                            <li><a href="#">SALE</a></li>
+                            <li><a href="#">EVENT</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox" id="menuicon">
+                        <label for="menuicon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                        <div class="sidebar">
+                            <ul class="sitemap-ul">
+                                <li class="insideList"><a href="#" class="categories"><span>간편식</span></a>
+                                    <ul class="side_group">
+                                        <li class="side_li"><a href="#">도시락</a></li>
+                                        <li class="side_li"><a href="#">밀키트</a></li>
+                                        <li class="side_li"><a href="#">샐러드</a></li>
+                                        <li class="side_li"><a href="#">베이커리</a></li>
+                                        <li class="side_li"><a href="#">즉석조리식품</a></li>
+                                    </ul>
+                                </li>
+                                <li class="insideList"><a href="#" class="categories"><span>신선 재료</span> </a>
+                                    <ul class="side_group">
+                                        <li class="side_li"><a href="#">쌀</a></li>
+                                        <li class="side_li"><a href="#">과일</a></li>
+                                        <li class="side_li"><a href="#">야채</a></li>
+                                        <li class="side_li"><a href="#">고기</a></li>
+                                        <li class="side_li"><a href="#">수산</a></li>
+                                        <li class="side_li"><a href="#">계란,유제품</a></li>
+                                    </ul>
+                                </li>
+                                <li class="insideList"><a href="#" class="categories"><span> 간식</span></a>
+                                    <ul class="side_group">
+                                        <li class="side_li"><a href="#">스낵</a></li>
+                                        <li class="side_li"><a href="#">캔디</a></li>
+                                        <li class="side_li"><a href="#">초콜릿</a></li>
+                                        <li class="side_li"><a href="#">디저트</a></li>
+                                        <li class="side_li"><a href="#">아이스크림</a></li>
+                                    </ul>
+                                </li>
+                                <li class="insideList"><a href="#" class="categories"><span>생수/음료</span></a>
+                                    <ul class="side_group">
+                                        <li><a href="#">커피</a></li>
+                                        <li class="side_li"><a href="#">차</a></li>
+                                        <li class="side_li"><a href="#">생수</a></li>
+                                        <li class="side_li"><a href="#">주스</a></li>
+                                        <li class="side_li"><a href="#">우유</a></li>
+                                    </ul>
+                                </li>
+                                <li class="insideList"><a href="#" class="categories"><span>건강식품</span></a>
+                                    <ul class="side_group">
+                                        <li class="side_li"><a href="#">홍삼</a></li>
+                                        <li class="side_li"><a href="#">영양제</a></li>
+                                        <li class="side_li"><a href="#">꿀</a></li>
+                                        <li class="side_li"><a href="#">유산균</a></li>
+                                        <li class="side_li"><a href="#">건강즙</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </header>
+
+
+
+        <div id="main">
+            <div class="section">
+                <input type="radio" name="slide" id="slide01" checked>
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+
+                <div class="slidewrap">
+
+                    <ul class="slidelist">
+                        <!-- 슬라이드 영역 -->
+                        <li class="slideitem">
+                            <a href="sub2.html">
+                                <div class="textbox">
+                                    <h3> 밀키트 </h3>
+                                    <p> 간편한 샐러드 하루 배송</p>
+                                </div>
+                                <img src="./img/max-griss-7QN816ztGgM-unsplash.jpg">
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a href="sub2.html">
+
+                                <div class="textbox">
+                                    <h3> 무항생제 계란</h3>
+                                    <p> [바른계란] 동물복지 계란 12입</p>
+                                </div>
+                                <img src="./img/rayia-soderberg-2vzJ1PQMW2I-unsplash.jpg">
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a href="sub2.html">
+
+                                <div class="textbox">
+                                    <h3> 시리얼 </h3>
+                                    <p> 간편한 그래놀라 15입 </p>
+                                </div>
+                                <img src="./img/tangerine-newt-N0Ai_Hc5s0I-unsplash.jpg">
+                            </a>
+                        </li class="slideitem">
+
+                        <!-- 좌,우 슬라이드 버튼 -->
+                        <div class="slide-control">
+                            <div>
+                                <label for="slide03" class="left"></label>
+                                <label for="slide02" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide01" class="left"></label>
+                                <label for="slide03" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide02" class="left"></label>
+                                <label for="slide01" class="right"></label>
+                            </div>
+                        </div>
+
+                    </ul>
+                    <!-- 페이징 -->
+                    <ul class="slide-pagelist">
+                        <li><label for="slide01"></label></li>
+                        <li><label for="slide02"></label></li>
+                        <li><label for="slide03"></label></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!--section-->
+
+            <div class="section">
+                <!--두번째 section-->
+                <input type="radio" name="slide2" id="slide2_01" checked>
+                <input type="radio" name="slide2" id="slide2_02">
+                <input type="radio" name="slide2" id="slide2_03">
+
+                <div class="slidewrap">
+
+                    <ul class="slidelist">
+                        <!-- 슬라이드 영역 -->
+                        <li class="slideitem">
+                            <a href="sub2.html">
+                                <div class="textbox">
+                                    <h3> 유산균 </h3>
+                                    <p> 하루를 가볍게 </p>
+                                </div>
+                                <img src="./img/유산균.jpg">
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a href="sub2.html">
+
+                                <div class="textbox">
+                                    <h3> 오늘의 만찬</h3>
+                                    <p> 당일 배송</p>
+                                </div>
+                                <img src="./img/만찬.jpg">
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a href="sub2.html">
+                                <div class="textbox">
+                                    <h3> 건강한 반찬 </h3>
+                                    <p> 영양을 그대로 </p>
+                                </div>
+                                <img src="./img/건강요리.jpg">
+                            </a>
+                        </li class="slideitem">
+
+                        <!-- 좌,우 슬라이드 버튼 -->
+                        <div class="slide-control">
+                            <div>
+                                <label for="slide2_03" class="left"></label>
+                                <label for="slide2_02" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide2_01" class="left"></label>
+                                <label for="slide2_03" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide2_02" class="left"></label>
+                                <label for="slide2_01" class="right"></label>
+                            </div>
+                        </div>
+
+                    </ul>
+                    <!-- 페이징 -->
+                    <ul class="slide-pagelist">
+                        <li><label for="slide2_01"></label></li>
+                        <li><label for="slide2_02"></label></li>
+                        <li><label for="slide2_03"></label></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!--section-->
+
+
+            <div class="section">
+                <!--3번째 section-->
+                <input type="radio" name="slide3" id="slide3_01" checked>
+                <input type="radio" name="slide3" id="slide3_02">
+                <input type="radio" name="slide3" id="slide3_03">
+
+                <div class="slidewrap">
+
+                    <ul class="slidelist">
+                        <!-- 슬라이드 영역 -->
+                        <li class="slideitem">
+                            <a href="sub2.html">
+                                <div class="textbox">
+                                    <h3> 야채볶음덮밥 </h3>
+                                    <p> 500g </p>
+                                </div>
+                                <img src="./img/야채요리.jpg">
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a href="sub2.html">
+
+                                <div class="textbox">
+                                    <h3> 토마토 파이</h3>
+                                    <p> 수제 베이커리 </p>
+                                </div>
+                                <img src="./img/파이.jpg">
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a href="sub2.html">
+
+                                <div class="textbox">
+                                    <h3> 수제버거 런치 세트 </h3>
+                                    <p> 당일 배송 </p>
+                                </div>
+                                <img src="./img/햄버거.jpg">
+                            </a>
+                        </li class="slideitem">
+
+                        <!-- 좌,우 슬라이드 버튼 -->
+                        <div class="slide-control">
+                            <div>
+                                <label for="slide3_03" class="left"></label>
+                                <label for="slide3_02" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide3_01" class="left"></label>
+                                <label for="slide3_03" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide3_02" class="left"></label>
+                                <label for="slide3_01" class="right"></label>
+                            </div>
+                        </div>
+
+                    </ul>
+                    <!-- 페이징 -->
+                    <ul class="slide-pagelist">
+                        <li><label for="slide3_01"></label></li>
+                        <li><label for="slide3_02"></label></li>
+                        <li><label for="slide3_03"></label></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!--section-->
+
+
+        </div>
+        <div class="clear"></div>
+
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Cy-ZeJ0xXYY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <script src="./js/service.js"></script>
+
+        <!--main-->
+        <div id="footer">
+            <div class="footer-page">
+                <div data-include-path="footer.html"></div>
+            </div>
+        </div>
+
+
+    </div>
+    <!--wrapper-->
+
+</body>
+
+</html>

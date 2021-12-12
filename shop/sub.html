@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css연결-->
+    <link rel="stylesheet" href="css/common.css">
+    <!--폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <title> JYJ </title>
+    <!--이모티콘 이미지-->
+    <script src="https://kit.fontawesome.com/e11d53af1e.js" crossorigin="anonymous"></script>
+    <!--자바스크립트-->
+
+    <!--자바스크립트-->
+    <script src="js/main.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/footer.js" defer></script>
+    <title> JYJ </title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <ul class="header-list">
+                <li>
+                    <div class="navbar__logo">
+                        <a href="index.html">
+                            <div class="logo">
+                                <img src="img/logo_green_bg_size.png" alt="">
+                            </div>
+                            <!--y로고 -->
+                            <div class="logo_text"> JYJ </div>
+                        </a>
+                        <!--본문 바로가기-->
+                    </div>
+                </li>
+                <li class="updown_menu">
+                    <div class="upper_menu">
+                        <ul class="menu-ul">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="sub.html">회원가입</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="down_menu">
+                        <ul class="menu-ul">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="sub2.html">NEW</a></li>
+                            <li><a href="sub2.html">BEST</a></li>
+                            <li><a href="#">SALE</a></li>
+                            <li><a href="#">EVENT</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox" id="menuicon">
+                        <label for="menuicon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                        <div class="sidebar">
+                            <ul class="sitemap-ul">
+                                <li class="insideList"><a href="#" class="categories"><span>간편식</span></a>
+                                    <ul class="side_group">
+                                        <li class="side_li"><a href="#">도시락</a></li>
+                                        <li class="side_li"><a href="#">밀키트</a></li>
+                                        <li class="side_li"><a href="#">샐러드</a></li>
+                                        <li class="side_li"><a href="#">베이커리</a></li>
+                                        <li class="side_li"><a href="#">즉석조리식품</a></li>
+                                    </ul>
+                                </li>
+                                <li class="insideList"><a href="#" class="categories"><span>신선 재료</span> </a>
+                                    <ul class="side_group">
+                                        <li class="side_li"><a href="#">쌀</a></li>
+                                        <li class="side_li"><a href="#">과일</a></li>
+                                        <li class="side_li"><a href="#">야채</a></li>
+                                        <li class="side_li"><a href="#">고기</a></li>
+                                        <li class="side_li"><a href="#">수산</a></li>
+                                        <li class="side_li"><a href="#">계란,유제품</a></li>
+                                    </ul>
+                                </li>
+                                <li class="insideList"><a href="#" class="categories"><span> 간식</span></a>
+                                    <ul class="side_group">
+                                        <li class="side_li"><a href="#">스낵</a></li>
+                                        <li class="side_li"><a href="#">캔디</a></li>
+                                        <li class="side_li"><a href="#">초콜릿</a></li>
+                                        <li class="side_li"><a href="#">디저트</a></li>
+                                        <li class="side_li"><a href="#">아이스크림</a></li>
+                                    </ul>
+                                </li>
+                                <li class="insideList"><a href="#" class="categories"><span>생수/음료</span></a>
+                                    <ul class="side_group">
+                                        <li><a href="#">커피</a></li>
+                                        <li class="side_li"><a href="#">차</a></li>
+                                        <li class="side_li"><a href="#">생수</a></li>
+                                        <li class="side_li"><a href="#">주스</a></li>
+                                        <li class="side_li"><a href="#">우유</a></li>
+                                    </ul>
+                                </li>
+                                <li class="insideList"><a href="#" class="categories"><span>건강식품</span></a>
+                                    <ul class="side_group">
+                                        <li class="side_li"><a href="#">홍삼</a></li>
+                                        <li class="side_li"><a href="#">영양제</a></li>
+                                        <li class="side_li"><a href="#">꿀</a></li>
+                                        <li class="side_li"><a href="#">유산균</a></li>
+                                        <li class="side_li"><a href="#">건강즙</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </header>
+
+
+    </div>
+
+    <div class="join_form">
+
+
+        <h3><span><i class="fas fa-address-book"></i></span> 회원가입정보</h3>
+
+        <form action="#">
+            <ul id="mem_form">
+                <li>
+                    <ul class="cols">
+                        <li class="col1"> <span class="must">＊</span>아이디</li>
+                        <li class="col2">
+                            <input type="text">
+                            <button id="idCheck">중복확인</button>
+                            12자 이내
+
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul class="cols">
+                        <li class="col1"><span class="must">＊</span>비밀번호</li>
+                        <li class="col2">
+                            <input type="password">
+                            12자 이내
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul class="cols">
+                        <li class="col1"><span class="must">＊</span>비밀번호 확인</li>
+                        <li class="col2">
+                            <input type="password">
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul class="cols">
+                        <li class="col1"><span class="must">＊</span>이름</li>
+                        <li class="col2">
+                            <input type="text">
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul class="cols">
+                        <li class="col1"><span class="must">＊</span>생년월일</li>
+                        <li class="col2">
+                            <input type="text" class="year">년
+                            <input type="text" class="birthday">월
+                            <input type="text" class="birthday">일
+                            &nbsp;&nbsp;
+                            <input type="radio" name="birth" checked>음력
+                            &nbsp;&nbsp;
+                            <input type="radio" name="birth" checked>양력
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="cols">
+                        <li class="col1"><span class="must">＊</span>이메일 : </li>
+                        <li class="col2">
+                            <input type="text" id="email1">
+                            @
+                            <select id="email2">
+                                <option>선택</option>
+                                <option>gmail.com</option>
+                                <option>naver.com</option>
+                                <option>hanmail.net</option>
+
+                            </select>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <ul class="cols">
+                        <li class="col1"><span class="must">＊</span>휴대전화</li>
+                        <li class="col2">
+                            <input type="text" class="hp"> -
+                            <input type="text" class="hp"> - <input type="text" class="hp">
+
+                        </li>
+
+                    </ul>
+                </li>
+
+
+
+
+                <li>
+                    <ul class="cols">
+                        <li class="col1">관심 카테고리</li>
+                        <li class="col2">
+                            <input type="checkbox" name="purpose1">간편식
+                            <input type="checkbox" name="purpose2">신선 식품
+                            <input type="checkbox" name="purpose3">간식
+                            <input type="checkbox" name="purpose4">생수,음료
+                            <input type="checkbox" name="purpose4">건강식품
+
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li>
+                    <ul class="cols">
+                        <li class="col1"> &nbsp; </li>
+                        <li class="col2">
+                            <center>
+                                <input type="reset" value=" 취소 " class="buttons">
+                                &nbsp;&nbsp;
+                                <input type="submit" value=" 제출 " class="buttons">
+                            </center>
+
+                        </li>
+                    </ul>
+                </li>
+
+
+            </ul>
+
+        </form>
+    </div>
+
+
+    <div id="footer">
+        <div class="footer-page">
+            <div data-include-path="footer.html"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
